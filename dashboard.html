@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fee Management Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+
+    body {
+     
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color:#34495e;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Main Content */
+    .main {
+      flex-grow: 1;
+      padding: 20px;
+       background-image:url(https://th.bing.com/th/id/R.15fee93ac0ed1013d4ae57132bf8f618?rik=NnIXhF4JkTYwiw&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fBook-wallpaper-photos-hd-wallpapers.jpg&ehk=1ambcLsyTUbi7BaoSzUa3Fnp3hBzf432OUEmdz2P8gU%3d&risl=&pid=ImgRaw&r=0 );
+       
+    }
+
+    .header {
+       background-color:#f4f6f8;
+      color: black;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #28a745;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #34495e;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Fee System</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Students</a>
+    <a href="#">Payments</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Welcome to the Fee Management Dashboard</h1>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p>150</p>
+      </div>
+      <div class="card">
+        <h3>Fees Collected</h3>
+        <p>$25,000</p>
+      </div>
+      <div class="card">
+
+        <h3>Pending Fees</h3>
+        <p>$5,000</p>
+      </div>
+    </div>
+
+    <button class="btn">Add New Payment</button>
+  </div>
+
+</body>
+</html>
